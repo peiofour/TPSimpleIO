@@ -1,13 +1,20 @@
 package exOne;
 
 import java.io.File;
+import java.util.Scanner;
 
 public class ScanRepo {
-    private File folder = new File("pathExample");
-    private File[] listFile = folder.listFiles();
 
-    public void main(String[] args){
-        for (File aListFile : listFile) {
+    public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Choose a repository : ");
+        String folderName = scn.nextLine();
+
+        File folder = new File(folderName);
+        File[] filesList = folder.listFiles();
+        assert filesList != null;
+        
+        for (File aListFile : filesList) {
             if (aListFile.isFile()) {
                 System.out.println("File : " + aListFile.getName());
             }
