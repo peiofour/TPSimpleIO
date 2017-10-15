@@ -6,6 +6,16 @@ import java.util.Scanner;
 public class ScanRepo {
 
     public static void main(String[] args){
+
+        File[] filesList = getListFiles();
+        for (File aListFile : filesList) {
+            if (aListFile.isFile()) {
+                System.out.println("File : " + aListFile.getName());
+            }
+        }
+    }
+
+    private static File[] getListFiles(){
         Scanner scn = new Scanner(System.in);
         System.out.println("Choose a repository : ");
         String folderName = scn.nextLine();
@@ -13,11 +23,6 @@ public class ScanRepo {
         File folder = new File(folderName);
         File[] filesList = folder.listFiles();
         assert filesList != null;
-        
-        for (File aListFile : filesList) {
-            if (aListFile.isFile()) {
-                System.out.println("File : " + aListFile.getName());
-            }
-        }
-    }
+        return filesList;
+    };
 }
