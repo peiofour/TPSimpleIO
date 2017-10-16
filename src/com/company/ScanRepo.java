@@ -1,5 +1,5 @@
-package exOne;
-
+package com.company;
+//Exercice 1
 import java.io.File;
 import java.util.Scanner;
 
@@ -20,9 +20,11 @@ public class ScanRepo {
         System.out.println("Choose a repository : ");
         String folderName = scn.nextLine();
 
+
         File folder = new File(folderName);
         File[] filesList = folder.listFiles();
         assert filesList != null;
+
         return filesList;
     };
 }
