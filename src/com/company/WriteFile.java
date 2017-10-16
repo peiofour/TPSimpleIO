@@ -1,5 +1,5 @@
 package com.company;
-
+// Exercice 4/5
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -7,7 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
-public class WriteFile {
+class WriteFile {
 
     static void main(){
         Scanner scn = new Scanner(System.in);
