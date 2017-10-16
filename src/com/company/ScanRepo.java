@@ -3,9 +3,9 @@ package com.company;
 import java.io.File;
 import java.util.Scanner;
 
-public class ScanRepo {
+class ScanRepo {
 
-    public static void main(String[] args){
+    static void main(){
 
         File[] filesList = getListFiles();
         for (File aListFile : filesList) {

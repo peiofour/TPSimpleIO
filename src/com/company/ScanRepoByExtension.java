@@ -2,13 +2,12 @@ package com.company;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.util.Objects;
 import java.util.Scanner;
 
 //Exercice 2
-public class ScanRepoByExtension{
+class ScanRepoByExtension{
 
-    public static void main(String[] args){
+    static void main(){
 
         File[] filesList = getListFiles();
         for (File aListFile : filesList) {
