@@ -22,6 +22,5 @@ public class CheckPath {
         else {
             System.out.println("The selected path is wrong");
         }
-
     }
 }
