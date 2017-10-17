@@ -19,8 +19,6 @@ class ScanRepo {
         Scanner scn = new Scanner(System.in);
         System.out.println("Choose a repository : ");
         String folderName = scn.nextLine();
-
-
         File folder = new File(folderName);
         File[] filesList = folder.listFiles();
         assert filesList != null;
