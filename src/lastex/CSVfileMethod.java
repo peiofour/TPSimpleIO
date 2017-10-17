@@ -20,7 +20,7 @@ public class CSVfileMethod {
 
     public static void readCSV(String path){
         BufferedReader fileReader = null;
-        List employees = new ArrayList();
+        List<Employee> employees = new ArrayList<>();
         String line = "";
         try {
             fileReader = new BufferedReader(new FileReader(path));
@@ -60,5 +60,7 @@ public class CSVfileMethod {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
     }
 }
